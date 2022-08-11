@@ -17,7 +17,7 @@ class CustomTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         avatarLabel.layer.masksToBounds = true
-        avatarLabel.layer.cornerRadius = 10
+        avatarLabel.layer.cornerRadius = 32
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

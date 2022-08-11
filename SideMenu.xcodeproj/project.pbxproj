@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB23F5CD28A41DC4008598AC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB23F5CC28A41DC4008598AC /* MenuView.swift */; };
-		DB23F5CF28A41DD5008598AC /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB23F5CE28A41DD5008598AC /* MenuView.xib */; };
+		DB30BEF328A50A770074B4D6 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB30BEF228A50A770074B4D6 /* MenuView.xib */; };
+		DB30BEF528A50B110074B4D6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB30BEF428A50B110074B4D6 /* MenuView.swift */; };
 		DB5381D5289D1DBF00108A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381D4289D1DBF00108A9A /* AppDelegate.swift */; };
 		DB5381D7289D1DBF00108A9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381D6289D1DBF00108A9A /* SceneDelegate.swift */; };
 		DB5381D9289D1DBF00108A9A /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381D8289D1DBF00108A9A /* MainFeedViewController.swift */; };
@@ -23,8 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB23F5CC28A41DC4008598AC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		DB23F5CE28A41DD5008598AC /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		DB30BEF228A50A770074B4D6 /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		DB30BEF428A50B110074B4D6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		DB5381D1289D1DBF00108A9A /* SideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5381D4289D1DBF00108A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5381D6289D1DBF00108A9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +54,8 @@
 		DB23F5D028A41EDE008598AC /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
-				DB23F5CC28A41DC4008598AC /* MenuView.swift */,
-				DB23F5CE28A41DD5008598AC /* MenuView.xib */,
+				DB30BEF228A50A770074B4D6 /* MenuView.xib */,
+				DB30BEF428A50B110074B4D6 /* MenuView.swift */,
 			);
 			path = MenuView;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			files = (
 				DB5381E1289D1DC000108A9A /* LaunchScreen.storyboard in Resources */,
 				DB5381DE289D1DC000108A9A /* Assets.xcassets in Resources */,
-				DB23F5CF28A41DD5008598AC /* MenuView.xib in Resources */,
+				DB30BEF328A50A770074B4D6 /* MenuView.xib in Resources */,
 				DB5381EB289D484600108A9A /* CustomTableViewCell.xib in Resources */,
 				DB5381DC289D1DBF00108A9A /* Main.storyboard in Resources */,
 			);
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5381ED289D4AB400108A9A /* Constants.swift in Sources */,
-				DB23F5CD28A41DC4008598AC /* MenuView.swift in Sources */,
+				DB30BEF528A50B110074B4D6 /* MenuView.swift in Sources */,
 				DB5381D9289D1DBF00108A9A /* MainFeedViewController.swift in Sources */,
 				DB5381D5289D1DBF00108A9A /* AppDelegate.swift in Sources */,
 				DB5381EF289D53EC00108A9A /* Message.swift in Sources */,
