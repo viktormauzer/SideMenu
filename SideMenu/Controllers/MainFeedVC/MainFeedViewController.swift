@@ -15,7 +15,7 @@ class MainFeedViewController: UIViewController {
     @IBOutlet var mainFeedTableView: UITableView!
     @IBOutlet var menuView: MenuView!
     @IBOutlet var menuViewLeadingConstraint: NSLayoutConstraint!
-    var backgroundView: UIView!
+    var backgroundView = UIView()
     
     let messages: [Message] = Message.mockData()
     var filteredMessages: [Message] = []
@@ -55,6 +55,19 @@ class MainFeedViewController: UIViewController {
         toggleMenu(.closed)
     }
     
+    @objc
+    func menuViewDragged(_ panGesture: UIPanGestureRecognizer) {
+        let dragAmount = panGesture.translation(in: menuView).x
+        
+        if dragAmount < 0 {
+            menuViewLeadingConstraint.constant = panGesture.translation(in: menuView).x
+        }
+        
+        if panGesture.state == .ended {
+            dragAmount < -150 ? toggleMenu(.closed) : toggleMenu(.opened)
+        }
+    }
+    
     //MARK: - Helper Methods
     
     func setupViewController() {
@@ -69,6 +82,10 @@ class MainFeedViewController: UIViewController {
         // Set defaults for first load
         selectedMenuItem = "Primary"
         selectedCategory = .primary
+        
+        // Drag gesture for menu view
+        let drag = UIPanGestureRecognizer(target: self, action: #selector(menuViewDragged))
+        menuView.addGestureRecognizer(drag)
     }
     
     func toggleMenu(_ status: MenuStatus) {
@@ -89,15 +106,14 @@ class MainFeedViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
         
-        if status == .opened {
+        if status == .opened && !backgroundView.isFirstResponder {
             createBackgroundView()
         }
     }
     
     func createBackgroundView() {
-        backgroundView = UIView()
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        backgroundView.backgroundColor = UIColor(white: 0, alpha: 0.05)
         backgroundView.layer.shadowRadius = 10
         backgroundView.layer.shadowColor = UIColor.label.cgColor
         backgroundView.layer.shadowOffset = .zero
@@ -116,7 +132,7 @@ class MainFeedViewController: UIViewController {
     }
     
     func removeBackgroundView() {
-        if backgroundView != nil {
+        if !backgroundView.isFirstResponder {
             backgroundView.removeFromSuperview()
         }
     }
