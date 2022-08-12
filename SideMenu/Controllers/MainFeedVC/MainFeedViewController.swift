@@ -171,4 +171,11 @@ extension MainFeedViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailVC = storyboard?.instantiateViewController(withIdentifier: K.detailVCStoryboardID) as? DetailViewController {
+            detailVC.message = filteredMessages[indexPath.row]
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
 }

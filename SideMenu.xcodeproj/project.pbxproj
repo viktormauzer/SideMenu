@@ -20,6 +20,7 @@
 		DB5381ED289D4AB400108A9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381EC289D4AB400108A9A /* Constants.swift */; };
 		DB5381EF289D53EC00108A9A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381EE289D53EC00108A9A /* Message.swift */; };
 		DB5381F1289D54F500108A9A /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381F0289D54F500108A9A /* Ext+String.swift */; };
+		DBC0B54A28A664C7007CE23F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0B54928A664C7007CE23F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DB5381EC289D4AB400108A9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DB5381EE289D53EC00108A9A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DB5381F0289D54F500108A9A /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
+		DBC0B54928A664C7007CE23F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				DB5381D8289D1DBF00108A9A /* MainFeedViewController.swift */,
-				DB5381DA289D1DBF00108A9A /* Main.storyboard */,
 				DB23F5D328A41F08008598AC /* MainFeedTableViewCell */,
 			);
 			path = MainFeedVC;
@@ -100,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				DB23F5D428A41F3F008598AC /* MainFeedVC */,
+				DBC0B54828A664AC007CE23F /* DetailViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,10 +140,19 @@
 				DB23F5D628A41F5F008598AC /* Views */,
 				DB23F5D528A41F50008598AC /* Controllers */,
 				DB5381DD289D1DC000108A9A /* Assets.xcassets */,
+				DB5381DA289D1DBF00108A9A /* Main.storyboard */,
 				DB5381DF289D1DC000108A9A /* LaunchScreen.storyboard */,
 				DB5381E2289D1DC000108A9A /* Info.plist */,
 			);
 			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		DBC0B54828A664AC007CE23F /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0B54928A664C7007CE23F /* DetailViewController.swift */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC0B54A28A664C7007CE23F /* DetailViewController.swift in Sources */,
 				DB5381ED289D4AB400108A9A /* Constants.swift in Sources */,
 				DB30BEF528A50B110074B4D6 /* MenuView.swift in Sources */,
 				DB5381D9289D1DBF00108A9A /* MainFeedViewController.swift in Sources */,

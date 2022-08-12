@@ -10,6 +10,7 @@ import Foundation
 struct K {
     static let cellName = "CustomTableViewCell"
     static let cellReuseIdentifier = "ReusableCustomTableViewCell"
+    static let detailVCStoryboardID = "DetailViewController"
     
     struct Icons {
         static var menuButtonIcon = "contextualmenu.and.cursorarrow"
