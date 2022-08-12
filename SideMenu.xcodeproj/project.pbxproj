@@ -21,6 +21,7 @@
 		DB5381EF289D53EC00108A9A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381EE289D53EC00108A9A /* Message.swift */; };
 		DB5381F1289D54F500108A9A /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5381F0289D54F500108A9A /* Ext+String.swift */; };
 		DBC0B54A28A664C7007CE23F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0B54928A664C7007CE23F /* DetailViewController.swift */; };
+		DBC0B54C28A66F08007CE23F /* TableViewExt+MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0B54B28A66F08007CE23F /* TableViewExt+MainFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DB5381EE289D53EC00108A9A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DB5381F0289D54F500108A9A /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
 		DBC0B54928A664C7007CE23F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DBC0B54B28A66F08007CE23F /* TableViewExt+MainFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewExt+MainFeedViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DB5381D8289D1DBF00108A9A /* MainFeedViewController.swift */,
+				DBC0B54B28A66F08007CE23F /* TableViewExt+MainFeedViewController.swift */,
 				DB23F5D328A41F08008598AC /* MainFeedTableViewCell */,
 			);
 			path = MainFeedVC;
@@ -237,6 +240,7 @@
 				DB5381EA289D484600108A9A /* CustomTableViewCell.swift in Sources */,
 				DB5381F1289D54F500108A9A /* Ext+String.swift in Sources */,
 				DB5381D7289D1DBF00108A9A /* SceneDelegate.swift in Sources */,
+				DBC0B54C28A66F08007CE23F /* TableViewExt+MainFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
